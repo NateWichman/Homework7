@@ -1,0 +1,613 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8B6C8BD8228B7FE8001DFFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BD7228B7FE8001DFFC3 /* AppDelegate.swift */; };
+		8B6C8BDA228B7FE8001DFFC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BD9228B7FE8001DFFC3 /* ViewController.swift */; };
+		8B6C8BDD228B7FE8001DFFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6C8BDB228B7FE8001DFFC3 /* Main.storyboard */; };
+		8B6C8BDF228B7FE9001DFFC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B6C8BDE228B7FE9001DFFC3 /* Assets.xcassets */; };
+		8B6C8BE2228B7FE9001DFFC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6C8BE0228B7FE9001DFFC3 /* LaunchScreen.storyboard */; };
+		8B6C8BED228B7FE9001DFFC3 /* GeolocationCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BEC228B7FE9001DFFC3 /* GeolocationCalculatorTests.swift */; };
+		8B6C8BF8228B7FE9001DFFC3 /* GeolocationCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BF7228B7FE9001DFFC3 /* GeolocationCalculatorUITests.swift */; };
+		8B6C8C06228B8E9C001DFFC3 /* DecimalMinusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8C05228B8E9C001DFFC3 /* DecimalMinusTextField.swift */; };
+		8B9AD309228CD32300553187 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B9AD308228CD32300553187 /* SettingsViewController.swift */; };
+		8BC040E7229DED820077955F /* LocationLookup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC040E6229DED820077955F /* LocationLookup.swift */; };
+		8BC040E9229DF1AA0077955F /* HistoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC040E8229DF1AA0077955F /* HistoryTableViewController.swift */; };
+		8BF0B6EE22960F59006BFC45 /* GeolocationCalculatorTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0B6ED22960F59006BFC45 /* GeolocationCalculatorTextField.swift */; };
+		8BF0B6F0229612EA006BFC45 /* GeolocationCalculatorLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0B6EF229612EA006BFC45 /* GeolocationCalculatorLabel.swift */; };
+		8BF0B6F22296133A006BFC45 /* GeolocationCalculatorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BF0B6F12296133A006BFC45 /* GeolocationCalculatorButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8B6C8BE9228B7FE9001DFFC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6C8BCC228B7FE8001DFFC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6C8BD3228B7FE8001DFFC3;
+			remoteInfo = GeolocationCalculatorApplication;
+		};
+		8B6C8BF4228B7FE9001DFFC3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8B6C8BCC228B7FE8001DFFC3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B6C8BD3228B7FE8001DFFC3;
+			remoteInfo = GeolocationCalculatorApplication;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8B6C8BD4228B7FE8001DFFC3 /* GeolocationCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6C8BD7228B7FE8001DFFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8B6C8BD9228B7FE8001DFFC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8B6C8BDC228B7FE8001DFFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8B6C8BDE228B7FE9001DFFC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8B6C8BE1228B7FE9001DFFC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8B6C8BE3228B7FE9001DFFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6C8BE8228B7FE9001DFFC3 /* GeolocationCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeolocationCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6C8BEC228B7FE9001DFFC3 /* GeolocationCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationCalculatorTests.swift; sourceTree = "<group>"; };
+		8B6C8BEE228B7FE9001DFFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6C8BF3228B7FE9001DFFC3 /* GeolocationCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GeolocationCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B6C8BF7228B7FE9001DFFC3 /* GeolocationCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationCalculatorUITests.swift; sourceTree = "<group>"; };
+		8B6C8BF9228B7FE9001DFFC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8B6C8C05228B8E9C001DFFC3 /* DecimalMinusTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecimalMinusTextField.swift; sourceTree = "<group>"; };
+		8B9AD308228CD32300553187 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		8BC040E6229DED820077955F /* LocationLookup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationLookup.swift; sourceTree = "<group>"; };
+		8BC040E8229DF1AA0077955F /* HistoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewController.swift; sourceTree = "<group>"; };
+		8BF0B6ED22960F59006BFC45 /* GeolocationCalculatorTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationCalculatorTextField.swift; sourceTree = "<group>"; };
+		8BF0B6EF229612EA006BFC45 /* GeolocationCalculatorLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationCalculatorLabel.swift; sourceTree = "<group>"; };
+		8BF0B6F12296133A006BFC45 /* GeolocationCalculatorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeolocationCalculatorButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8B6C8BD1228B7FE8001DFFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BE5228B7FE9001DFFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BF0228B7FE9001DFFC3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8B6C8BCB228B7FE8001DFFC3 = {
+			isa = PBXGroup;
+			children = (
+				8B6C8BD6228B7FE8001DFFC3 /* GeolocationCalculator */,
+				8B6C8BEB228B7FE9001DFFC3 /* GeolocationCalculatorTests */,
+				8B6C8BF6228B7FE9001DFFC3 /* GeolocationCalculatorUITests */,
+				8B6C8BD5228B7FE8001DFFC3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8B6C8BD5228B7FE8001DFFC3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B6C8BD4228B7FE8001DFFC3 /* GeolocationCalculator.app */,
+				8B6C8BE8228B7FE9001DFFC3 /* GeolocationCalculatorTests.xctest */,
+				8B6C8BF3228B7FE9001DFFC3 /* GeolocationCalculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8B6C8BD6228B7FE8001DFFC3 /* GeolocationCalculator */ = {
+			isa = PBXGroup;
+			children = (
+				8B6C8BD7228B7FE8001DFFC3 /* AppDelegate.swift */,
+				8B6C8C05228B8E9C001DFFC3 /* DecimalMinusTextField.swift */,
+				8BF0B6ED22960F59006BFC45 /* GeolocationCalculatorTextField.swift */,
+				8BF0B6EF229612EA006BFC45 /* GeolocationCalculatorLabel.swift */,
+				8BF0B6F12296133A006BFC45 /* GeolocationCalculatorButton.swift */,
+				8B6C8BD9228B7FE8001DFFC3 /* ViewController.swift */,
+				8B6C8BDB228B7FE8001DFFC3 /* Main.storyboard */,
+				8B9AD308228CD32300553187 /* SettingsViewController.swift */,
+				8B6C8BDE228B7FE9001DFFC3 /* Assets.xcassets */,
+				8B6C8BE0228B7FE9001DFFC3 /* LaunchScreen.storyboard */,
+				8B6C8BE3228B7FE9001DFFC3 /* Info.plist */,
+				8BC040E6229DED820077955F /* LocationLookup.swift */,
+				8BC040E8229DF1AA0077955F /* HistoryTableViewController.swift */,
+			);
+			path = GeolocationCalculator;
+			sourceTree = "<group>";
+		};
+		8B6C8BEB228B7FE9001DFFC3 /* GeolocationCalculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6C8BEC228B7FE9001DFFC3 /* GeolocationCalculatorTests.swift */,
+				8B6C8BEE228B7FE9001DFFC3 /* Info.plist */,
+			);
+			path = GeolocationCalculatorTests;
+			sourceTree = "<group>";
+		};
+		8B6C8BF6228B7FE9001DFFC3 /* GeolocationCalculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				8B6C8BF7228B7FE9001DFFC3 /* GeolocationCalculatorUITests.swift */,
+				8B6C8BF9228B7FE9001DFFC3 /* Info.plist */,
+			);
+			path = GeolocationCalculatorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8B6C8BD3228B7FE8001DFFC3 /* GeolocationCalculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6C8BFC228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculator" */;
+			buildPhases = (
+				8B6C8BD0228B7FE8001DFFC3 /* Sources */,
+				8B6C8BD1228B7FE8001DFFC3 /* Frameworks */,
+				8B6C8BD2228B7FE8001DFFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeolocationCalculator;
+			productName = GeolocationCalculatorApplication;
+			productReference = 8B6C8BD4228B7FE8001DFFC3 /* GeolocationCalculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8B6C8BE7228B7FE9001DFFC3 /* GeolocationCalculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6C8BFF228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculatorTests" */;
+			buildPhases = (
+				8B6C8BE4228B7FE9001DFFC3 /* Sources */,
+				8B6C8BE5228B7FE9001DFFC3 /* Frameworks */,
+				8B6C8BE6228B7FE9001DFFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6C8BEA228B7FE9001DFFC3 /* PBXTargetDependency */,
+			);
+			name = GeolocationCalculatorTests;
+			productName = GeolocationCalculatorApplicationTests;
+			productReference = 8B6C8BE8228B7FE9001DFFC3 /* GeolocationCalculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8B6C8BF2228B7FE9001DFFC3 /* GeolocationCalculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8B6C8C02228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculatorUITests" */;
+			buildPhases = (
+				8B6C8BEF228B7FE9001DFFC3 /* Sources */,
+				8B6C8BF0228B7FE9001DFFC3 /* Frameworks */,
+				8B6C8BF1228B7FE9001DFFC3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8B6C8BF5228B7FE9001DFFC3 /* PBXTargetDependency */,
+			);
+			name = GeolocationCalculatorUITests;
+			productName = GeolocationCalculatorApplicationUITests;
+			productReference = 8B6C8BF3228B7FE9001DFFC3 /* GeolocationCalculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B6C8BCC228B7FE8001DFFC3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = SWGVSUCIS657;
+				TargetAttributes = {
+					8B6C8BD3228B7FE8001DFFC3 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					8B6C8BE7228B7FE9001DFFC3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8B6C8BD3228B7FE8001DFFC3;
+					};
+					8B6C8BF2228B7FE9001DFFC3 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 8B6C8BD3228B7FE8001DFFC3;
+					};
+				};
+			};
+			buildConfigurationList = 8B6C8BCF228B7FE8001DFFC3 /* Build configuration list for PBXProject "GeolocationCalculator" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8B6C8BCB228B7FE8001DFFC3;
+			productRefGroup = 8B6C8BD5228B7FE8001DFFC3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8B6C8BD3228B7FE8001DFFC3 /* GeolocationCalculator */,
+				8B6C8BE7228B7FE9001DFFC3 /* GeolocationCalculatorTests */,
+				8B6C8BF2228B7FE9001DFFC3 /* GeolocationCalculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8B6C8BD2228B7FE8001DFFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6C8BE2228B7FE9001DFFC3 /* LaunchScreen.storyboard in Resources */,
+				8B6C8BDF228B7FE9001DFFC3 /* Assets.xcassets in Resources */,
+				8B6C8BDD228B7FE8001DFFC3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BE6228B7FE9001DFFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BF1228B7FE9001DFFC3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B6C8BD0228B7FE8001DFFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8BF0B6F0229612EA006BFC45 /* GeolocationCalculatorLabel.swift in Sources */,
+				8BF0B6F22296133A006BFC45 /* GeolocationCalculatorButton.swift in Sources */,
+				8BC040E7229DED820077955F /* LocationLookup.swift in Sources */,
+				8BF0B6EE22960F59006BFC45 /* GeolocationCalculatorTextField.swift in Sources */,
+				8B6C8C06228B8E9C001DFFC3 /* DecimalMinusTextField.swift in Sources */,
+				8BC040E9229DF1AA0077955F /* HistoryTableViewController.swift in Sources */,
+				8B6C8BDA228B7FE8001DFFC3 /* ViewController.swift in Sources */,
+				8B6C8BD8228B7FE8001DFFC3 /* AppDelegate.swift in Sources */,
+				8B9AD309228CD32300553187 /* SettingsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BE4228B7FE9001DFFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6C8BED228B7FE9001DFFC3 /* GeolocationCalculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8B6C8BEF228B7FE9001DFFC3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8B6C8BF8228B7FE9001DFFC3 /* GeolocationCalculatorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8B6C8BEA228B7FE9001DFFC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6C8BD3228B7FE8001DFFC3 /* GeolocationCalculator */;
+			targetProxy = 8B6C8BE9228B7FE9001DFFC3 /* PBXContainerItemProxy */;
+		};
+		8B6C8BF5228B7FE9001DFFC3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8B6C8BD3228B7FE8001DFFC3 /* GeolocationCalculator */;
+			targetProxy = 8B6C8BF4228B7FE9001DFFC3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8B6C8BDB228B7FE8001DFFC3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6C8BDC228B7FE8001DFFC3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8B6C8BE0228B7FE9001DFFC3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8B6C8BE1228B7FE9001DFFC3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8B6C8BFA228B7FE9001DFFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		8B6C8BFB228B7FE9001DFFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8B6C8BFD228B7FE9001DFFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8B6C8BFE228B7FE9001DFFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculator/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		8B6C8C00228B7FE9001DFFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculatorApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculatorApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeolocationCalculator.app/GeolocationCalculator";
+			};
+			name = Debug;
+		};
+		8B6C8C01228B7FE9001DFFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculatorApplicationTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculatorApplicationTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GeolocationCalculator.app/GeolocationCalculator";
+			};
+			name = Release;
+		};
+		8B6C8C03228B7FE9001DFFC3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculatorApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculatorApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeolocationCalculatorApplication;
+			};
+			name = Debug;
+		};
+		8B6C8C04228B7FE9001DFFC3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GeolocationCalculatorApplicationUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculatorApplicationUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GeolocationCalculatorApplication;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8B6C8BCF228B7FE8001DFFC3 /* Build configuration list for PBXProject "GeolocationCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6C8BFA228B7FE9001DFFC3 /* Debug */,
+				8B6C8BFB228B7FE9001DFFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6C8BFC228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6C8BFD228B7FE9001DFFC3 /* Debug */,
+				8B6C8BFE228B7FE9001DFFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6C8BFF228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6C8C00228B7FE9001DFFC3 /* Debug */,
+				8B6C8C01228B7FE9001DFFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8B6C8C02228B7FE9001DFFC3 /* Build configuration list for PBXNativeTarget "GeolocationCalculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8B6C8C03228B7FE9001DFFC3 /* Debug */,
+				8B6C8C04228B7FE9001DFFC3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B6C8BCC228B7FE8001DFFC3 /* Project object */;
+}
