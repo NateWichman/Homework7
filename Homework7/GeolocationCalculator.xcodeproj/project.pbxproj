@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		779DCBF222A1D83F00ACC0C2 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779DCBF122A1D83F00ACC0C2 /* HistoryTableViewCell.swift */; };
 		8B6C8BD8228B7FE8001DFFC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BD7228B7FE8001DFFC3 /* AppDelegate.swift */; };
 		8B6C8BDA228B7FE8001DFFC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6C8BD9228B7FE8001DFFC3 /* ViewController.swift */; };
 		8B6C8BDD228B7FE8001DFFC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B6C8BDB228B7FE8001DFFC3 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		779DCBED22A1D80800ACC0C2 /* GeolocationCalculator-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeolocationCalculator-Bridging-Header.h"; sourceTree = "<group>"; };
+		779DCBF122A1D83F00ACC0C2 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		8B6C8BD4228B7FE8001DFFC3 /* GeolocationCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeolocationCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B6C8BD7228B7FE8001DFFC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8B6C8BD9228B7FE8001DFFC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -124,6 +127,8 @@
 				8B6C8BE3228B7FE9001DFFC3 /* Info.plist */,
 				8BC040E6229DED820077955F /* LocationLookup.swift */,
 				8BC040E8229DF1AA0077955F /* HistoryTableViewController.swift */,
+				779DCBED22A1D80800ACC0C2 /* GeolocationCalculator-Bridging-Header.h */,
+				779DCBF122A1D83F00ACC0C2 /* HistoryTableViewCell.swift */,
 			);
 			path = GeolocationCalculator;
 			sourceTree = "<group>";
@@ -214,6 +219,7 @@
 				TargetAttributes = {
 					8B6C8BD3228B7FE8001DFFC3 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 					8B6C8BE7228B7FE9001DFFC3 = {
 						CreatedOnToolsVersion = 10.2.1;
@@ -281,6 +287,7 @@
 				8BF0B6F22296133A006BFC45 /* GeolocationCalculatorButton.swift in Sources */,
 				8BC040E7229DED820077955F /* LocationLookup.swift in Sources */,
 				8BF0B6EE22960F59006BFC45 /* GeolocationCalculatorTextField.swift in Sources */,
+				779DCBF222A1D83F00ACC0C2 /* HistoryTableViewCell.swift in Sources */,
 				8B6C8C06228B8E9C001DFFC3 /* DecimalMinusTextField.swift in Sources */,
 				8BC040E9229DF1AA0077955F /* HistoryTableViewController.swift in Sources */,
 				8B6C8BDA228B7FE8001DFFC3 /* ViewController.swift in Sources */,
@@ -460,6 +467,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeolocationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -468,6 +476,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeolocationCalculator/GeolocationCalculator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -477,6 +487,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = GeolocationCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +496,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = SWGVSUCIS657.GeolocationCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeolocationCalculator/GeolocationCalculator-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

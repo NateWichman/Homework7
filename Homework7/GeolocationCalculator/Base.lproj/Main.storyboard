@@ -43,6 +43,67 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FancyCell" rowHeight="200" id="tvK-dI-7cn" customClass="HistoryTableViewCell" customModule="GeolocationCalculator" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="72" width="414" height="200"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tvK-dI-7cn" id="KST-zs-tNR">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="CvE-XA-TcZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img1" translatesAutoresizingMaskIntoConstraints="NO" id="84R-hy-Ynj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="207" height="199.5"/>
+                                                </imageView>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img2" translatesAutoresizingMaskIntoConstraints="NO" id="l69-kC-pQU">
+                                                    <rect key="frame" x="207" y="0.0" width="207" height="199.5"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                        <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C7o-2K-U7l">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="199.5"/>
+                                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </view>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ROV-Bp-AgK">
+                                            <rect key="frame" x="20" y="69" width="374" height="61.5"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="faK-wW-ieh">
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ub4-mx-m7X">
+                                                    <rect key="frame" x="0.0" y="20.5" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odN-Zv-jij">
+                                                    <rect key="frame" x="0.0" y="41" width="374" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ROV-Bp-AgK" firstAttribute="top" secondItem="KST-zs-tNR" secondAttribute="topMargin" constant="58" id="3tM-LI-VD8"/>
+                                        <constraint firstItem="CvE-XA-TcZ" firstAttribute="leading" secondItem="KST-zs-tNR" secondAttribute="leading" id="DLA-A5-WR0"/>
+                                        <constraint firstAttribute="bottom" secondItem="CvE-XA-TcZ" secondAttribute="bottom" id="DxA-pR-EcC"/>
+                                        <constraint firstAttribute="trailing" secondItem="C7o-2K-U7l" secondAttribute="trailing" id="EfP-Zj-Jbi"/>
+                                        <constraint firstAttribute="bottom" secondItem="C7o-2K-U7l" secondAttribute="bottom" id="LAC-vT-KjT"/>
+                                        <constraint firstItem="C7o-2K-U7l" firstAttribute="leading" secondItem="KST-zs-tNR" secondAttribute="leading" id="aV6-wR-Ms0"/>
+                                        <constraint firstItem="C7o-2K-U7l" firstAttribute="top" secondItem="KST-zs-tNR" secondAttribute="top" id="cNJ-Nm-wyq"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="ROV-Bp-AgK" secondAttribute="trailing" id="gjf-i3-7RB"/>
+                                        <constraint firstItem="ROV-Bp-AgK" firstAttribute="leading" secondItem="KST-zs-tNR" secondAttribute="leadingMargin" id="hKH-LK-7u1"/>
+                                        <constraint firstItem="CvE-XA-TcZ" firstAttribute="top" secondItem="KST-zs-tNR" secondAttribute="top" id="vcg-U7-IYZ"/>
+                                        <constraint firstAttribute="trailing" secondItem="CvE-XA-TcZ" secondAttribute="trailing" id="ynb-Lb-jhc"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="pqd-Ki-GGa" id="80D-ML-z2H"/>
@@ -52,7 +113,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w4A-o6-LdU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1088" y="-553"/>
+            <point key="canvasLocation" x="1086.9565217391305" y="-553.125"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -334,4 +395,8 @@
             <point key="canvasLocation" x="-600" y="140.625"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="img1" width="1024" height="688"/>
+        <image name="img2" width="1000" height="752"/>
+    </resources>
 </document>
